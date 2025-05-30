@@ -30,6 +30,10 @@ public class Employee {
 		this.salary = salary;
 		this.gender = gender;
 	}
+	
+	public Employee() {
+		
+	}
 
 	public String getEmpNo() {
 		return empNo;
