@@ -33,8 +33,8 @@ public class EmployeeController {
     }
     
     @PostMapping
-    public ResponseEntity<Employee> createEmployee(@RequestBody Employee employee) {
-		return new ResponseEntity<>(employee, HttpStatus.CREATED);
+    public ResponseEntity<String> createEmployee(@RequestBody Employee employee) {
+		return new ResponseEntity<String>(service.addEMp(employee), HttpStatus.CREATED);
     }
     
     @PutMapping("/{id}")
